@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>友涯 - 云端学习打卡</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>友涯 - 云端学习打卡</h1>
+        </div>
+        
+        <div class="timer-container">
+            <img id="treeImage" src="tree1.png" alt="Tree Growth">
+            <div id="encouragement">加油，小树伴你一同成长</div>
+            <div> <!-- 新增的div容器 -->
+                <input type="number" id="hours" placeholder="时" min="0" max="23">
+                <span>:</span>
+                <input type="number" id="minutes" placeholder="分" min="0" max="59">
+                <span>:</span>
+                <input type="number" id="seconds" placeholder="秒" min="0" max="59">
+            </div>
+            <button onclick="startTimer()">开始打卡</button>
+            <div id="countdown"></div>
+        </div>
+
+        <footer>
+            ©2023 友涯 - 生涯规划. All Rights Reserved.
+        </footer>
+
+        <script src="timer.js"></script>
+    </div>
+</body>
+</html>
